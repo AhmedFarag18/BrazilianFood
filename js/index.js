@@ -41,7 +41,7 @@ $(document).ready(function() {
 
     // Counter up
     const counters = document.querySelectorAll('.about .num');
-    const delay = 100;
+    const delay = 200;
 
     counters.forEach(counter => {
         const updateCount = () => {
@@ -68,4 +68,28 @@ $(document).ready(function() {
     $('.count-down').countdown('2021/03/28', function(event) {
         $(this).html(event.strftime(content));
     });
+
+
+
+    // Switch between colors
+    var link = $('link[data-color="switch"]');
+
+    var logo = $('.logo img');
+
+
+    $('.fa-adjust').on('click', function() {
+        if (link.attr('href') == 'css/darkMode.css') {
+            link.attr('href', 'css/ligthMode.css')
+            logo.attr('src', 'images/logo/black.png')
+
+        } else {
+            link.attr('href', 'css/darkMode.css')
+            logo.attr('src', 'images/logo/white.png')
+
+
+        }
+    })
+
+    // switch image logo
+
 })
