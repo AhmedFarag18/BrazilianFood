@@ -1,0 +1,200 @@
+/* when width 1200px in large screen */
+
+@media(max-width:1200px) {
+    .nav-left {
+        display: none !important;
+    }
+    .nav-top {
+        display: block !important;
+    }
+    .header .icons-right {
+        display: none !important;
+    }
+    .header .slider {
+        margin-top: 108px;
+    }
+    .side-menu {
+        padding: 70px;
+        width: 50%;
+    }
+    /* gallary */
+    .gallery .head h2 {
+        font-size: 16rem;
+    }
+}
+
+
+/* when width 996px in meduim screen */
+
+@media(max-width:991px) {
+    .about {
+        margin-top: 210px;
+    }
+    .side-menu a {
+        font-size: 45px;
+    }
+    .about .counter-up {
+        margin-top: 50px;
+    }
+    .gallery .head h2 {
+        font-size: 12rem;
+    }
+    .offer .title-letter {
+        font-size: 4.7em;
+    }
+    .offer .title-word {
+        padding: 40px 0 86px 110px;
+    }
+    .offer .offer-image:after {
+        display: block;
+    }
+}
+
+
+/* when width 1200px in large screen */
+
+@media(max-width:767px) {
+    .about {
+        margin-top: 150px;
+    }
+    .side-menu {
+        width: 100%;
+    }
+    .side-menu a {
+        font-size: 30px;
+    }
+    .side-menu a:before {
+        bottom: 1px;
+        left: -34px;
+        font-size: 17px;
+    }
+    .gallery .head h2 {
+        font-size: 7rem;
+    }
+    .gallery .img-negitve {
+        margin-top: 0;
+    }
+    .offer .info p {
+        font-size: 15px;
+    }
+    .offer .info .box {
+        padding: 7px;
+    }
+    .offer .info .box .num {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .offer .info .box .name {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .team {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:650px) {
+    .about .heading {
+        font-size: 60px;
+    }
+    .about .title-word {
+        padding: 40px 0 86px 49px;
+    }
+    .about p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .about .counter-up .box .num {
+        font-size: 40px;
+    }
+    .about .counter-up .box .name {
+        font-size: 14px;
+    }
+    .gallery .head h2 {
+        font-size: 5rem;
+    }
+    .testmonials .heading {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 481px) {
+    .about {
+        margin-top: 100px;
+    }
+    .gallery .head h2 {
+        font-size: 4rem;
+    }
+    .offer .title-word {
+        padding: 40px 0 86px 80px;
+    }
+    .offer .heading {
+        font-size: 40px;
+    }
+    .testmonials .heading {
+        font-size: 40px;
+    }
+    .testmonials .title-word {
+        padding: 40px 0 86px 80px;
+    }
+    .team .heading {
+        font-size: 50px;
+    }
+    .team .title-letter {
+        font-size: 4em;
+    }
+    .team .title-word {
+        padding: 40px 0 86px 80px;
+    }
+}
+
+
+/* screen xx-small */
+
+@media(max-width:300px) {
+    .about {
+        margin-top: 50px;
+    }
+    .about .heading {
+        font-size: 40px;
+    }
+    .about .title-word {
+        padding: 40px 0 86px 40px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .about .counter-up .box .num {
+        font-size: 30px;
+    }
+    .about .counter-up .box .name {
+        font-size: 12px;
+    }
+    .gallery .head h2 {
+        font-size: 3rem;
+    }
+}
+
+
+/* ========================================================================
+        ============================= Global style================================ */
+
+
+/* Start framework*/
+
+ul {
+    list-style: none;
+}
+
+i {
+    cursor: pointer;
+    transition: .3s;
+}
+
+i:hover {
+    color: #7e7d7d;
+}
+
+
+/* End framework*/
