@@ -8,6 +8,16 @@ $(document).ready(function() {
     // })
 
 
+
+
+    //loading page
+    $(window).on('load', function() {
+
+        $('.loading').fadeOut(2000)
+    });
+
+    /*=========================================================================================== */
+
     // Owl carousel
     $('.owl-carousel').owlCarousel({
         loop: true,
@@ -17,6 +27,7 @@ $(document).ready(function() {
         smartSpeed: 450,
     })
 
+    /*=========================================================================================== */
 
     //side-menu
     $('.menu').on('click', function() {
@@ -27,8 +38,13 @@ $(document).ready(function() {
         $('.side-menu').removeClass('open')
     })
 
-    //scroll navbar
+
+
+    /*=========================================================================================== */
+
     $(window).scroll(function() {
+
+        //scroll navbar
         if ($(this).scrollTop() >= 30) {
             $('.nav-left').fadeOut(500);
             $('.nav-top').fadeIn(500);
@@ -36,31 +52,61 @@ $(document).ready(function() {
             $('.nav-left').fadeIn(500);
             $('.nav-top').fadeOut(500);
         }
-    })
 
 
-    // Counter up
-    const counters = document.querySelectorAll('.about .num');
-    const delay = 200;
+        // button up
+        if ($(window).scrollTop() >= 800) {
+            $('.up').fadeIn(1000);
 
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = counter.getAttribute('data-target')
-            const count = +counter.innerText;
-            const speed = target / delay;
-
-
-            if (count < target) {
-
-                counter.innerText = Math.ceil(count + speed);
-                setTimeout(updateCount, 1);
-
-            } else {
-                counter.innerText = target;
-            }
+        } else {
+            $('.up').fadeOut(1000);
         }
-        updateCount();
     })
+
+    // when click button
+    $('.up').click(function() {
+
+        $('html,body').animate({
+            scrollTop: 0
+        }, 2000)
+
+    });
+    /*=========================================================================================== */
+
+    /* ===========  [ Counter up ]  ===========*/
+
+
+    $('.countTo-1').countTo({
+        from: 0,
+        to: 13,
+        speed: 8000,
+        refreshInterval: 80
+    });
+
+    $('.countTo-2').countTo({
+        from: 0,
+        to: 210,
+        speed: 8000,
+        refreshInterval: 80
+    });
+    $('.countTo-3').countTo({
+        from: 0,
+        to: 23,
+        speed: 8000,
+        refreshInterval: 80
+    });
+    $('.countTo-4').countTo({
+        from: 0,
+        to: 1000,
+        speed: 8000,
+        refreshInterval: 80
+    });
+
+
+
+
+
+    /*=========================================================================================== */
 
     // count down
     var content = $('.count-down').html();
@@ -70,10 +116,13 @@ $(document).ready(function() {
     });
 
 
+    /*=========================================================================================== */
+
 
     // Switch between colors
     var link = $('link[data-color="switch"]');
 
+    // switch image logo
     var logo = $('.logo img');
 
 
@@ -85,11 +134,29 @@ $(document).ready(function() {
         } else {
             link.attr('href', 'css/darkMode.css')
             logo.attr('src', 'images/logo/white.png')
-
-
         }
     })
 
-    // switch image logo
+
+    /*=========================================================================================== */
+
+
+    //Smooth scroll
+    $('.side-menu li a').on('click', function() {
+
+        //add class active on menu
+        $(this).addClass('active').parent().siblings().find('a').removeClass('active')
+
+        $('html,body').animate({
+            scrollTop: $('#' + $(this).data('scroll')).offset().top - 150
+        })
+    })
+
+
+
+    /*=========================================================================================== */
+
+
+
 
 })

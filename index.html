@@ -131,9 +131,12 @@
             </div>
             <div class="list">
                 <ul>
-                    <li><a href="#" data-num="01">about</a></li>
-                    <li><a href="#" data-num="02">gallary</a></li>
-                    <li><a href="#" data-num="03">contact</a></li>
+                    <li><a href="#" data-num="01" class="active" data-scroll="about">about</a></li>
+                    <li><a href="#" data-num="02" data-scroll="gallary">gallary</a></li>
+                    <li><a href="#" data-num="03" data-scroll="offer">offer</a></li>
+                    <li><a href="#" data-num="04" data-scroll="Testimonials">Testimonials</a></li>
+                    <li><a href="#" data-num="05" data-scroll="Team">Team</a></li>
+                    <li><a href="#" data-num="06" data-scroll="contact">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -143,11 +146,11 @@
 
 
     <!-- start About -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 ">
                     <div class="heading">
                         <span class="title-letter">a</span>
                         <span class="title-word">
@@ -160,13 +163,13 @@
                     </p>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 ">
                     <div class="counter-up">
                         <div class="row">
 
                             <div class="col-6">
                                 <div class="box">
-                                    <span class="num" data-target="13">0</span>
+                                    <span class="num countTo-1"></span>
 
                                     <span class="name">Years of Experienced</span>
                                 </div>
@@ -174,21 +177,21 @@
 
                             <div class="col-6">
                                 <div class="box">
-                                    <span class="num" data-target="100">0</span>
+                                    <span class="num countTo-2"></span>
                                     <span class="name">menus/dish</span>
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <div class="box">
-                                    <span class="num" data-target="22">0</span>
+                                    <span class="num countTo-3"></span>
                                     <span class="name">staffs</span>
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <div class="box">
-                                    <span class="num" data-target="2000">0</span>
+                                    <span class="num countTo-4"></span>
                                     <span class="name">happy customers</span>
                                 </div>
                             </div>
@@ -205,7 +208,7 @@
 
 
     <!-- Start Gallary -->
-    <section class="gallery">
+    <section class="gallery" id="gallary">
         <div class="container">
 
             <div class="head">
@@ -259,7 +262,7 @@
 
 
     <!-- Start Offer -->
-    <section class="offer">
+    <section class="offer" id="offer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -319,7 +322,7 @@
 
 
     <!-- Start Testmonials -->
-    <section class="testmonials">
+    <section class="testmonials" id="Testimonials">
         <div class="container">
 
             <div class="heading">
@@ -374,7 +377,7 @@
 
 
     <!--start team -->
-    <section class="team section">
+    <section class="team section" id="Team">
         <div class="container">
             <div class="heading">
                 <span class="title-letter">O</span>
@@ -408,7 +411,7 @@
                             <figcaption>
                                 <div class="info">
                                     <h3>Temta Swang</h3>
-                                    <p>Python Lead</p>
+                                    <p>Chief Pizza</p>
                                 </div>
                                 <div class="social">
                                     <a href="#" class="twitter" data-abc="true"><i class="fab fa-twitter"></i></a>
@@ -466,7 +469,7 @@
 
 
     <!-- Start contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container custom-container">
             <div class="row">
 
@@ -574,8 +577,34 @@
     </footer>
     <!-- End Footer -->
 
+
+
+    
+    <!--Button up-->
+<button class="up">
+    <i class="fas fa-chevron-up"></i>
+</button>
+    <!--  Button up -->
+
+    <!--loading page-->
+<div class="loading">
+
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+    
+</div>
+
+
+
+
+
+
     <script src="assist/jquery/jquery-3.5.1.min.js"></script>
     <script src="assist/bootstrap/bootstrap.min.js"></script>
+    <script src="assist/countTo/jquery.countTo.js"></script>
     <script src="assist/OwlCarousel/owl.carousel.min.js"></script>
     <script src="assist/countDown/jquery.countdown.min.js"></script>
     <script src="js/index.js"></script>

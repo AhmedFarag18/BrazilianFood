@@ -160,7 +160,7 @@
             position: relative;
             color: #111;
             text-decoration: none;
-            font-size: 77px;
+            font-size: 35px;
             font-weight: 800;
             transition: .5s;
         }
@@ -186,7 +186,7 @@
         }
         
         .side-menu .list {
-            margin-top: 7.5em;
+            margin-top: 4.5em;
         }
         
         .side-menu .list li {
@@ -858,8 +858,35 @@
         .custom-container {
             max-width: 100%;
         }
+        /* button up */
+        /*start Button up*/
         
-        input:active {
+        .up {
+            background: #111;
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            bottom: 30px;
+            right: 22px;
+            border: navajowhite;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+            display: none;
+            z-index: 99999;
+        }
+        
+        .up i {
+            color: #EEE;
+            font-size: 20px;
+        }
+        /* button up */
+        
+        .up:focus {
+            outline: none;
+        }
+        
+        input:focus {
             outline: none;
             box-shadow: none;
             border: none;
