@@ -1,5 +1,10 @@
     /* when width 1200px in large screen */
     
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    
     @media(max-width:1200px) {
         .nav-left {
             display: none !important;
