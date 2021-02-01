@@ -264,40 +264,19 @@
             color: #282832;
         }
         
-        .gallery .image {
-            margin: 0 15px 60px;
-            position: relative;
-        }
-        
-        .gallery .image .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .gallery img {
+            transition: 1s;
+            padding: 15px;
             width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 30px;
-            opacity: 0;
-            transform: scale(0.7);
-            transition: 0.8s;
         }
         
-        .gallery .image:hover .overlay {
-            opacity: 1;
-            transform: scale(1);
-        }
-        
-        .gallery .image .overlay>div {
-            border: 2px solid #FFF;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 35px;
+        .gallery img:hover {
+            filter: grayscale(100%);
+            transform: scale(1.1);
         }
         
         .gallery .img-negitve {
-            margin-top: -130px;
+            margin-top: -100px;
         }
         
         .gallery .link-gallary {
@@ -860,9 +839,10 @@
         }
         
         footer .info .heart {
+            display: inline;
             text-decoration: none;
-            color: #f00;
-            font-size: 30px;
+            color: #0062cc;
+            font-size: 25px;
         }
         /* end footer */
         /* Start framework*/

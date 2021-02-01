@@ -203,6 +203,13 @@
         .nav-top .icons-right i {
             margin: 0 5px;
         }
+        .gallery .link-gallary {
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .gallery .link-gallary::before {
+            width: 50px;
+        }
     }
     /* screen xx-small */
     
@@ -239,6 +246,12 @@
         }
         .nav-top .icons-right i {
             margin: 0 2px;
+        }
+        .offer .title-word {
+            padding: 40px 0 60px 40px;
+        }
+        .testmonials .title-word {
+            padding: 40px 0 86px 40px;
         }
     }
     /* ========================================================================
