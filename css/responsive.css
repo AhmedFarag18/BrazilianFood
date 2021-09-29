@@ -5,6 +5,16 @@
         overflow-x: hidden;
     }
     
+    .list ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .form-control:focus {
+        outline: none !important;
+        box-shadow: none;
+    }
+    
     @media(max-width:1200px) {
         .nav-left {
             display: none !important;
@@ -18,16 +28,11 @@
         .header .slider {
             margin-top: 108px;
         }
-        .side-menu {
-            padding: 70px;
-            width: 50%;
-        }
         /* gallary */
         .gallery .head h2 {
             font-size: 16rem;
         }
     }
-    /* when width 996px in meduim screen */
     
     @media(max-width:991px) {
         .about {
@@ -37,8 +42,7 @@
             font-size: 30px;
         }
         .side-menu a:before {
-            bottom: 1px;
-            left: -50px;
+            font-size: 90px;
         }
         .about .counter-up {
             margin-top: 50px;
@@ -66,23 +70,19 @@
             width: 100%;
         }
     }
-    /* when width 1200px in large screen */
     
     @media(max-width:767px) {
+        .nav-top img {
+            width: 40px;
+        }
         .about {
             margin-top: 150px;
-        }
-        .side-menu {
-            padding: 50px;
-            width: 100%;
         }
         .side-menu a {
             font-size: 25px;
         }
         .side-menu a:before {
-            bottom: 3px;
-            left: -40px;
-            font-size: 17px;
+            font-size: 70px;
         }
         .gallery .head h2 {
             font-size: 7rem;
@@ -124,6 +124,9 @@
     }
     
     @media(max-width:650px) {
+        .side-menu a:before {
+            font-size: 55px;
+        }
         .about .heading {
             font-size: 60px;
         }
@@ -156,12 +159,10 @@
             font-size: 22px;
         }
         .side-menu a:before {
-            bottom: 2px;
-            left: -35px;
-            font-size: 15px;
+            font-size: 45px;
         }
         .about {
-            margin-top: 100px;
+            margin-top: 50px;
         }
         .gallery .head h2 {
             font-size: 4rem;
@@ -220,8 +221,11 @@
         .side-menu a {
             font-size: 20px;
         }
+        .side-menu a:before {
+            font-size: 35px;
+        }
         .about {
-            margin-top: 50px;
+            margin-top: 30px;
         }
         .about .heading {
             font-size: 40px;

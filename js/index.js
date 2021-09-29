@@ -83,7 +83,7 @@ $(document).ready(function() {
     });
     $('.countTo-3').countTo({
         from: 0,
-        to: 23,
+        to: 26,
         speed: 12000,
         refreshInterval: 80
     });
@@ -103,7 +103,7 @@ $(document).ready(function() {
     // count down
     var content = $('.count-down').html();
 
-    $('.count-down').countdown('2021/03/28', function(event) {
+    $('.count-down').countdown('2022/03/28', function(event) {
         $(this).html(event.strftime(content));
     });
 
@@ -130,8 +130,6 @@ $(document).ready(function() {
 
 
     /*=========================================================================================== */
-
-
     //Smooth scroll
     $('.side-menu li a').on('click', function() {
 
@@ -145,8 +143,6 @@ $(document).ready(function() {
 
 
     /*=========================================================================================== */
-
-
     //Aos animation scroll
     AOS.init();
 
