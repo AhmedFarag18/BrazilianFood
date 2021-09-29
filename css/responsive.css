@@ -1,341 +1,367 @@
-    /* when width 1200px in large screen */
-    
-    html,
-    body {
-        overflow-x: hidden;
+/* when width 1200px in large screen */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+@media(max-width:1200px) {
+    .nav-left {
+        display: none !important;
     }
-    
-    .list ul {
-        margin: 0;
-        padding: 0;
+    .nav-top {
+        display: block !important;
     }
-    
-    .form-control:focus {
-        outline: none !important;
-        box-shadow: none;
+    .header .icons-right {
+        display: none !important;
     }
-    
-    @media(max-width:1200px) {
-        .nav-left {
-            display: none !important;
-        }
-        .nav-top {
-            display: block !important;
-        }
-        .header .icons-right {
-            display: none !important;
-        }
-        .header .slider {
-            margin-top: 108px;
-        }
-        /* gallary */
-        .gallery .head h2 {
-            font-size: 16rem;
-        }
+    .header .slider {
+        margin-top: 108px;
     }
-    
-    @media(max-width:991px) {
-        .about {
-            margin-top: 210px;
-        }
-        .side-menu a {
-            font-size: 30px;
-        }
-        .side-menu a:before {
-            font-size: 90px;
-        }
-        .about .counter-up {
-            margin-top: 50px;
-        }
-        .gallery .head h2 {
-            font-size: 12rem;
-        }
-        .offer .title-letter {
-            font-size: 4.7em;
-        }
-        .offer .title-word {
-            padding: 40px 0 86px 110px;
-        }
-        .offer .offer-image:after {
-            display: block;
-        }
-        .contact .book-table:after {
-            display: block;
-        }
-        .contact .book-table h2 {
-            font-size: 45px;
-        }
-        .contact .join .form-control,
-        .contact .join .btn-sub {
-            width: 100%;
-        }
+    /* gallary */
+    .gallery .head h2 {
+        font-size: 16rem;
     }
-    
-    @media(max-width:767px) {
-        .nav-top img {
-            width: 40px;
-        }
-        .about {
-            margin-top: 150px;
-        }
-        .side-menu a {
-            font-size: 25px;
-        }
-        .side-menu a:before {
-            font-size: 70px;
-        }
-        .gallery .head h2 {
-            font-size: 7rem;
-        }
-        .gallery .img-negitve {
-            margin-top: 0;
-        }
-        .offer .info p {
-            font-size: 15px;
-        }
-        .offer .info .box {
-            padding: 7px;
-        }
-        .offer .info .box .num {
-            font-size: 30px;
-            font-weight: 800;
-        }
-        .offer .info .box .name {
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-        .team {
-            margin-top: 100px;
-        }
-        .contact .contact-form {
-            position: unset;
-        }
-        .contact .book-table {
-            padding: 40px;
-        }
-        .contact .book-table::after,
-        .contact .book-table::before {
-            display: none;
-        }
-        footer {
-            text-align: center;
-        }
+}
+
+@media(max-width:991px) {
+    .about {
+        margin-top: 210px;
     }
-    
-    @media(max-width:650px) {
-        .side-menu a:before {
-            font-size: 55px;
-        }
-        .about .heading {
-            font-size: 60px;
-        }
-        .about .title-word {
-            padding: 40px 0 86px 49px;
-        }
-        .about p {
-            font-size: 16px;
-            font-weight: 500;
-        }
-        .about .counter-up .box .num {
-            font-size: 40px;
-        }
-        .about .counter-up .box .name {
-            font-size: 14px;
-        }
-        .gallery .head h2 {
-            font-size: 5rem;
-        }
-        .testmonials .heading {
-            font-size: 50px;
-        }
+    .side-menu a {
+        font-size: 30px;
     }
-    
-    @media (max-width: 481px) {
-        .side-menu {
-            padding: 40px;
-        }
-        .side-menu a {
-            font-size: 22px;
-        }
-        .side-menu a:before {
-            font-size: 45px;
-        }
-        .about {
-            margin-top: 50px;
-        }
-        .gallery .head h2 {
-            font-size: 4rem;
-        }
-        .offer .title-word {
-            padding: 40px 0 86px 80px;
-        }
-        .offer .heading {
-            font-size: 40px;
-        }
-        .offer .info .box {
-            padding: 4px;
-        }
-        .offer .info .box .num {
-            font-size: 22px;
-            font-weight: 800;
-        }
-        .offer .info .box .name {
-            font-size: 12px;
-        }
-        .testmonials .heading {
-            font-size: 40px;
-        }
-        .testmonials .title-word {
-            padding: 40px 0 86px 80px;
-        }
-        .team .heading {
-            font-size: 50px;
-        }
-        .team .title-letter {
-            font-size: 4em;
-        }
-        .team .title-word {
-            padding: 40px 0 86px 80px;
-        }
-        .contact .book-table h2 {
-            font-size: 30px;
-        }
-        .nav-top .icons-right i {
-            margin: 0 5px;
-        }
-        .gallery .link-gallary {
-            font-weight: 500;
-            font-size: 14px;
-        }
-        .gallery .link-gallary::before {
-            width: 50px;
-        }
+    .side-menu a:before {
+        font-size: 90px;
     }
-    /* screen xx-small */
-    
-    @media(max-width:305px) {
-        .side-menu {
-            padding: 35px;
-        }
-        .side-menu a {
-            font-size: 20px;
-        }
-        .side-menu a:before {
-            font-size: 35px;
-        }
-        .about {
-            margin-top: 30px;
-        }
-        .about .heading {
-            font-size: 40px;
-        }
-        .about .title-word {
-            padding: 40px 0 86px 40px;
-        }
-        .about p {
-            font-size: 16px;
-        }
-        .about .counter-up .box .num {
-            font-size: 30px;
-        }
-        .about .counter-up .box .name {
-            font-size: 12px;
-        }
-        .gallery .head h2 {
-            font-size: 3rem;
-        }
-        .contact .book-table h2 {
-            font-size: 22px;
-        }
-        .nav-top .icons-right i {
-            margin: 0 2px;
-        }
-        .offer .title-word {
-            padding: 40px 0 60px 40px;
-        }
-        .testmonials .title-word {
-            padding: 40px 0 86px 40px;
-        }
+    .about .counter-up {
+        margin-top: 50px;
     }
-    /* ========================================================================
-        ============================= Global style================================ */
-    /* Start framework*/
-    
-    ul {
-        list-style: none;
+    .gallery .head h2 {
+        font-size: 12rem;
     }
-    
-    .custom-container {
-        max-width: 100%;
+    .offer .title-letter {
+        font-size: 4.7em;
     }
-    
-    input:active {
-        outline: none;
-        box-shadow: none;
-        border: none;
+    .offer .title-word {
+        padding: 40px 0 86px 110px;
     }
-    /* End framework*/
-    /*<!--loading page--*/
-    
-    .loading {
-        position: fixed;
-        z-index: 999999;
+    .offer .offer-image:after {
+        display: block;
+    }
+    .contact .book-table:after {
+        display: block;
+    }
+    .contact .book-table h2 {
+        font-size: 45px;
+    }
+    .contact .join .form-control,
+    .contact .join .btn-sub {
         width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: #111;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-    
-    .spinner {
-        width: 70px;
+}
+
+@media(max-width:767px) {
+    .nav-top img {
+        width: 40px;
+    }
+    .about {
+        margin-top: 150px;
+    }
+    .side-menu a {
+        font-size: 25px;
+    }
+    .side-menu a:before {
+        font-size: 70px;
+    }
+    .gallery .head h2 {
+        font-size: 7rem;
+    }
+    .gallery .img-negitve {
+        margin-top: 0;
+    }
+    .offer .info p {
+        font-size: 15px;
+    }
+    .offer .info .box {
+        padding: 7px;
+    }
+    .offer .info .box .num {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .offer .info .box .name {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .team {
+        margin-top: 100px;
+    }
+    .contact .contact-form {
+        position: unset;
+    }
+    .contact .book-table {
+        padding: 40px;
+    }
+    .contact .book-table::after,
+    .contact .book-table::before {
+        display: none;
+    }
+    footer {
         text-align: center;
     }
-    
-    .spinner>div {
-        width: 18px;
-        height: 18px;
-        background-color: #eee;
-        border-radius: 100%;
-        display: inline-block;
-        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+@media(max-width:650px) {
+    .side-menu a:before {
+        font-size: 55px;
     }
-    
-    .spinner .bounce1 {
-        -webkit-animation-delay: -0.32s;
-        animation-delay: -0.32s;
+    .about .heading {
+        font-size: 60px;
     }
-    
-    .spinner .bounce2 {
-        -webkit-animation-delay: -0.16s;
-        animation-delay: -0.16s;
+    .about .title-word {
+        padding: 40px 0 86px 49px;
     }
-    
-    @-webkit-keyframes sk-bouncedelay {
-        0%,
-        80%,
-        100% {
-            -webkit-transform: scale(0)
-        }
-        40% {
-            -webkit-transform: scale(1.0)
-        }
+    .about p {
+        font-size: 16px;
+        font-weight: 500;
     }
-    
-    @keyframes sk-bouncedelay {
-        0%,
-        80%,
-        100% {
-            -webkit-transform: scale(0);
-            transform: scale(0);
-        }
-        40% {
-            -webkit-transform: scale(1.0);
-            transform: scale(1.0);
-        }
+    .about .counter-up .box .num {
+        font-size: 40px;
     }
+    .about .counter-up .box .name {
+        font-size: 14px;
+    }
+    .gallery .head h2 {
+        font-size: 5rem;
+    }
+    .testmonials .heading {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 481px) {
+    .side-menu {
+        padding: 40px;
+    }
+    .side-menu a {
+        font-size: 22px;
+    }
+    .side-menu a:before {
+        font-size: 45px;
+    }
+    .about {
+        margin-top: 50px;
+    }
+    .gallery .head h2 {
+        font-size: 4rem;
+    }
+    .offer .title-word {
+        padding: 40px 0 86px 80px;
+    }
+    .offer .heading {
+        font-size: 40px;
+    }
+    .offer .info .box {
+        padding: 4px;
+    }
+    .offer .info .box .num {
+        font-size: 22px;
+        font-weight: 800;
+    }
+    .offer .info .box .name {
+        font-size: 12px;
+    }
+    .testmonials .heading {
+        font-size: 40px;
+    }
+    .testmonials .title-word {
+        padding: 40px 0 86px 80px;
+    }
+    .team .heading {
+        font-size: 50px;
+    }
+    .team .title-letter {
+        font-size: 4em;
+    }
+    .team .title-word {
+        padding: 40px 0 86px 80px;
+    }
+    .contact .book-table h2 {
+        font-size: 30px;
+    }
+    .nav-top .icons-right i {
+        margin: 0 5px;
+    }
+    .gallery .link-gallary {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .gallery .link-gallary::before {
+        width: 50px;
+    }
+}
+
+
+/* screen xx-small */
+
+@media(max-width:305px) {
+    .side-menu {
+        padding: 35px;
+    }
+    .side-menu a {
+        font-size: 20px;
+    }
+    .side-menu a:before {
+        font-size: 35px;
+    }
+    .about {
+        margin-top: 30px;
+    }
+    .about .heading {
+        font-size: 40px;
+    }
+    .about .title-word {
+        padding: 40px 0 86px 40px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .about .counter-up .box .num {
+        font-size: 30px;
+    }
+    .about .counter-up .box .name {
+        font-size: 12px;
+    }
+    .gallery .head h2 {
+        font-size: 3rem;
+    }
+    .contact .book-table h2 {
+        font-size: 22px;
+    }
+    .nav-top .icons-right i {
+        margin: 0 2px;
+    }
+    .offer .title-word {
+        padding: 40px 0 60px 40px;
+    }
+    .testmonials .title-word {
+        padding: 40px 0 86px 40px;
+    }
+}
+
+
+/* ========================================================================
+============================= Global style================================ */
+
+
+/* Start framework*/
+
+ul {
+    list-style: none;
+}
+
+.custom-container {
+    max-width: 100%;
+}
+
+input:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+/* End framework*/
+
+
+/*<!--loading page--*/
+
+.loading {
+    position: fixed;
+    z-index: 999999;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.loader div:nth-child(1) {
+    background-color: #eee;
+    height: 200px;
+    width: 125px;
+    position: absolute;
+    margin: auto;
+    left: 40px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 100px 100px 10px 10px;
+    transform: rotate(45deg);
+    transform-origin: 50% 69%;
+    animation: flib1 4s linear infinite;
+}
+
+@keyframes flib1 {
+    25% {
+        transform: rotate(45deg) rotateX(180deg);
+    }
+    50% {
+        transform: rotate(45deg) rotateX(180deg);
+    }
+    75% {
+        transform: rotate(45deg);
+    }
+}
+
+.loader div:nth-child(2) {
+    background-color: #eee;
+    height: 200px;
+    width: 125px;
+    position: absolute;
+    margin: auto;
+    left: 132px;
+    top: 151px;
+    border-radius: 10px 10px 100px 100px;
+    transform: rotate(135deg);
+    transform-origin: 50% 31%;
+    animation: flib2 4s 1s linear infinite;
+}
+
+@keyframes flib2 {
+    25% {
+        transform: rotate(135deg) rotateX(180deg);
+    }
+    50% {
+        transform: rotate(135deg) rotateX(180deg);
+    }
+    75% {
+        transform: rotate(135deg);
+    }
+}
