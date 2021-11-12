@@ -20,37 +20,35 @@
     <!-- Aos animation scroll -->
     <link rel="stylesheet" href="assist/animation/aos.css">
     <!-- Css style -->
-    <link rel="stylesheet" href="css/darkMode.css" data-color="switch">
+    <link rel="stylesheet" href="css/ligthMode.css">
     <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
 <body>
-
-
-
     <!-- Start Nav Top -->
     <nav class="nav-top fixed-top">
         <div class="container-fluid">
             <div class="row">
-
                 <div class="col-4">
                     <div class="logo">
-                        <img src="images/logo/white.png" alt="logo">
+                        <img src="images/logo/black.png" alt="logo">
                     </div>
                 </div>
-
                 <div class="col-4 d-flex justify-content-center align-items-center">
                     <div class="menu">
                         <span class="top"></span>
                         <span class="bottom"></span>
                     </div>
                 </div>
-
                 <div class="col-4">
                     <div class="icons-right">
-                        <i class="fa fa-search"></i>
-                        <i class="fa fa-adjust"></i>
+                        <div class="search-icon">
+                            <i class="fa fa-search" id="search_icon"></i>
+                        </div>
+                        <div class="toggle-theme">
+                            <i class="fa fa-moon"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -71,17 +69,15 @@
 
                         <div class="brand">
                             <div class="logo">
-                                <img src="images/logo/white.png" alt="logo">
+                                <img src="images/logo/black.png" alt="logo">
                                 <div class="logo-text">Brazilian Pizaa</div>
                             </div>
                         </div>
-
                         <div class="menu">
                             <span class="top"></span>
                             <span class="bottom"></span>
                             <div class="menu-name">menu</div>
                         </div>
-
                         <div class="icons">
                             <ul>
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -89,7 +85,6 @@
                                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
 
@@ -98,7 +93,6 @@
                 <div class="col-lg-10">
                     <div class="slider">
                         <div class="owl-carousel owl-theme">
-
                             <div class="item">
                                 <img src="images/slider/carousel1.jpg" alt="">
                             </div>
@@ -115,11 +109,14 @@
                 <!-- icons right -->
                 <div class="col-lg-1">
                     <div class="icons-right">
-                        <i class="fa fa-search"></i>
-                        <i class="fa fa-adjust"></i>
+                        <div class="search-icon">
+                            <i class="fa fa-search" id="search_icon"></i>
+                        </div>
+                        <div class="toggle-theme">
+                            <i class="fa fa-moon"></i>
+                        </div>
                     </div>
                 </div>
-
 
             </div>
         </div>
@@ -150,6 +147,18 @@
     <!--End Side Menu -->
 
 
+    <!--Start Search -->
+    <div class="search-menu">
+        <div class="search-content">
+            <div class="icon-close">
+                <i class="fa fa-times"></i>
+            </div>
+            <input type="text" id="search" class="search" placeholder="Search.....">
+        </div>
+    </div>
+    <!--End Search -->
+
+
 
     <!-- start About -->
     <section class="about" id="about">
@@ -157,47 +166,42 @@
             <div class="row">
 
                 <div class="col-lg-6">
-                    <div class="heading" data-aos="fade-right" data-aos-duration="5cy00">
+                    <div class="heading" data-aos="fade-right">
                         <span class="title-letter">a</span>
                         <span class="title-word">
                             <span class="font-weight-light">about</span> <span>shop</span>
                         </span>
                     </div>
-                    <p data-aos="zoom-in-left" data-aos-duration="5cy00">
+                    <p data-aos="zoom-in-left">
                         On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and
-                        return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                        return to its own, safe country.
                     </p>
                 </div>
 
-                <div class="col-lg-6 " data-aos="zoom-out-left" data-aos-duration="5cy00">
+                <div class="col-lg-6 " data-aos="zoom-out-left">
                     <div class="counter-up">
                         <div class="row">
-
                             <div class="col-6">
                                 <div class="box">
-                                    <span class="num countTo-1"></span>
-
+                                    <span class="num num-count" data-goal="13">0</span>
                                     <span class="name">Years of Experienced</span>
                                 </div>
                             </div>
-
                             <div class="col-6">
                                 <div class="box">
-                                    <span class="num countTo-2"></span>
+                                    <span class="num num-count" data-goal="210">0</span>
                                     <span class="name">menus/dish</span>
                                 </div>
                             </div>
-
                             <div class="col-6">
                                 <div class="box">
-                                    <span class="num countTo-3"></span>
+                                    <span class="num num-count" data-goal="26">0</span>
                                     <span class="name">staffs</span>
                                 </div>
                             </div>
-
                             <div class="col-6">
                                 <div class="box">
-                                    <span class="num countTo-4"></span>
+                                    <span class="num num-count" data-goal="1000">0</span>
                                     <span class="name">happy customers</span>
                                 </div>
                             </div>
@@ -218,35 +222,89 @@
                 <h2>gallery</h2>
             </div>
             <div class="row">
-                <div class="col-md-6" data-aos="fade-up" data-aos-duration="5cy00">
-                    <a href="images/gallery/8.jpg" data-lightbox="mygallery" class="gallery1">
-                        <img src="images/gallery/8.jpg" alt="gallary1" class="img-fluid">
-                    </a>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="gallery-container">
+                        <a href="images/gallery/01.jpg" data-lightbox="mygallery" class="gallery1">
+                            <img src="images/gallery/01.jpg" alt="gallary1" class="img-fluid gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">
+                                    <h4>Dish #1</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="col-md-6 img-negitve" data-aos="fade-left" data-aos-duration="5cy00">
-                    <a href="images/gallery/9.jpg " data-lightbox="mygallery" class="gallery1">
-                        <img src="images/gallery/9.jpg" alt="gallary1" class="img-fluid">
-                    </a>
+                <div class="col-lg-4 col-md-6" data-aos="fade-left">
+                    <div class="gallery-container">
+                        <a href="images/gallery/02.jpg " data-lightbox="mygallery" class="gallery1">
+                            <img src="images/gallery/02.jpg" alt="gallary1" class="img-fluid gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">
+                                    <h4>Dish #2</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
                 </div>
 
-                <div class="col-md-6 " data-aos="fade-down" data-aos-duration="5cy00">
-                    <a href="images/gallery/10.jpg" data-lightbox="mygallery" class="gallery1">
-                        <img src="images/gallery/10.jpg" alt="gallary1" class="img-fluid">
-                    </a>
+                <div class="col-lg-4 col-md-6" data-aos="fade-down">
+                    <div class="gallery-container">
+                        <a href="images/gallery/03.jpg" data-lightbox="mygallery" class="gallery1">
+                            <img src="images/gallery/03.jpg" alt="gallary1" class="img-fluid gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">
+                                    <h4>Dish #3</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="col-md-6 img-negitve" data-aos="fade-right" data-aos-duration="5cy00">
-                    <a href="images/gallery/7.jpg" data-lightbox="mygallery" class="gallery1">
-                        <img src="images/gallery/7.jpg" alt="gallary1" class="img-fluid">
-                    </a>
-                    <a href="images/gallery/1.jpg" data-lightbox="mygallery" class="link-gallary">View More</a>
-                    <a href="images/gallery/3.jpg" data-lightbox="mygallery"></a>
-                    <a href="images/gallery/15.jpg" data-lightbox="mygallery"></a>
-                    <a href="images/gallery/4.jpg" data-lightbox="mygallery"></a>
-                    <a href="images/gallery/2.jpg" data-lightbox="mygallery"></a>
+                <div class="col-lg-4 col-md-6" data-aos="fade-right">
+                    <div class="gallery-container">
+                        <a href="images/gallery/04.jpg" data-lightbox="mygallery" class="gallery1">
+                            <img src="images/gallery/04.jpg" alt="gallary1" class="img-fluid gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">
+                                    <h4>Dish #4</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-down">
+                    <div class="gallery-container">
+                        <a href="images/gallery/05.jpg" data-lightbox="mygallery" class="gallery1">
+                            <img src="images/gallery/05.jpg" alt="gallary1" class="img-fluid gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">
+                                    <h4>Dish #5</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-down">
+                    <div class="gallery-container">
+                        <a href="images/gallery/06.jpg" data-lightbox="mygallery" class="gallery1">
+                            <img src="images/gallery/06.jpg" alt="gallary1" class="img-fluid gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">
+                                    <h4>Dish #6</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -263,15 +321,15 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="info">
-                        <div class="heading" data-aos="zoom-in-up" data-aos-duration="5cy00">
+                        <div class="heading" data-aos="zoom-in-up">
                             <span class="title-letter">S</span>
                             <span class="title-word">
                             <span class="font-weight-light">special</span> <span>offer</span>
                             </span>
                         </div>
-                        <p data-aos="fade-down-left" data-aos-duration="5cy00">Apply before the end of the promotion and get a 35% discount Order Your future interior right now</p>
+                        <p data-aos="fade-down-left">Apply before the end of the promotion and get a 35% discount Order Your future interior right now</p>
 
-                        <div class="count-down" data-aos="fade-up-left" data-aos-duration="5cy00">
+                        <div class="count-down" data-aos="fade-up-left">
                             <div class="box">
                                 <span class="num">%D</span>
                                 <span class="name">days</span>
@@ -293,13 +351,13 @@
                             </div>
                         </div>
 
-                        <a href="#" class="btn main-btn" data-aos="fade-up-right" data-aos-duration="5cy00">Get Discount</a>
+                        <a href="#" class="btn main-btn" data-aos="fade-up-right">Get Discount</a>
 
                     </div>
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="offer-image" data-aos="fade-left" data-aos-duration="5cy00">
+                    <div class="offer-image" data-aos="fade-left">
                         <img src="images/offer/test.jpg" alt="offer-image" class="img-fluid">
                         <div class="discount">
                             <div class="discount-text">
@@ -321,7 +379,7 @@
     <section class="testmonials" id="Testimonials">
         <div class="container">
 
-            <div class="heading" data-aos="zoom-in-up" data-aos-duration="5cy00">
+            <div class="heading" data-aos="zoom-in-up">
                 <span class="title-letter">W</span>
                 <span class="title-word">
                             <span class="font-weight-light">what</span> <span>people say</span>
@@ -331,17 +389,17 @@
         <div class="container custom-container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="box bg1" data-aos="fade-right" data-aos-duration="5cy00">
+                    <div class="box bg1" data-aos="fade-right">
                         <div class="info">
                             <span class="num">01</span>
                             <h3>Abigail Brown</h3>
-                            <p>We were pleased not only with the price but also with the quality of the work done. Thanks to the studio and its designers it turned out great, we hope for further cooperation.</p>
+                            <p>We were pleased not only with the price but also with the quality of the work done. Thanks to the studio and its designers it turned out great</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="box bg2" data-aos="zoom-out" data-aos-duration="5cy00">
+                    <div class="box bg2" data-aos="zoom-out">
                         <div class="info">
                             <span class="num">02</span>
                             <h3>Adam Smith</h3>
@@ -351,7 +409,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-12">
-                    <div class="box bg3" data-aos="fade-left" data-aos-duration="5cy00">
+                    <div class="box bg3" data-aos="fade-left">
                         <div class="info">
                             <span class="num">03</span>
                             <h3>David Richards</h3>
@@ -375,7 +433,7 @@
     <!--start team -->
     <section class="team section" id="Team">
         <div class="container">
-            <div class="heading" data-aos="zoom-in" data-aos-duration="5cy00">
+            <div class="heading" data-aos="zoom-in">
                 <span class="title-letter">O</span>
                 <span class="title-word">
                 <span class="font-weight-light">Our</span> <span>Team</span>
@@ -383,7 +441,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-ms-12">
-                    <div class="team-item" data-aos="fade-right" data-aos-duration="5cy00">
+                    <div class="team-item" data-aos="fade-right">
                         <figure>
                             <img src="images/staffs/chef1.jpg" alt="" class="img-fluid">
                             <figcaption>
@@ -401,7 +459,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-ms-12">
-                    <div class="team-item" data-aos="fade-right" data-aos-duration="5cy00">
+                    <div class="team-item" data-aos="fade-right">
                         <figure>
                             <img src="images/staffs/chef2.jpg" alt="" class="img-fluid">
                             <figcaption>
@@ -420,7 +478,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-ms-12">
-                    <div class="team-item" data-aos="fade-left" data-aos-duration="5cy00">
+                    <div class="team-item" data-aos="fade-left">
                         <figure>
                             <img src="images/staffs/chef3.jpg" alt="" class="img-fluid">
                             <figcaption>
@@ -438,7 +496,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-ms-12">
-                    <div class="team-item" data-aos="fade-left" data-aos-duration="5cy00">
+                    <div class="team-item" data-aos="fade-left">
                         <figure>
                             <img src="images/staffs/chef4.jpg" alt="" class="img-fluid">
                             <figcaption>
@@ -470,7 +528,7 @@
             <div class="row">
 
                 <div class="col-md-5">
-                    <div class="join" data-aos="fade-right" data-aos-duration="5cy00">
+                    <div class="join" data-aos="fade-right">
                         <h3>Join our<br>Weekly Newsletter</h3>
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email Adress">
@@ -482,7 +540,7 @@
                 </div>
 
                 <div class="col-md-7 contact-form">
-                    <div class="book-table" data-aos="fade-left" data-aos-duration="5cy00">
+                    <div class="book-table" data-aos="fade-left">
                         <h2>Book a Table</h2>
                         <form>
 
@@ -532,14 +590,12 @@
     </section>
     <!-- End contact -->
 
-
-
     <!-- Start Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="info" data-aos="zoom-in-up" data-aos-duration="5cy00">
+                    <div class="info" data-aos="zoom-in-up">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h3>Our Contacts</h3>
@@ -589,7 +645,6 @@
     <script src="assist/bootstrap/bootstrap.min.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
 
-    <script src="assist/countTo/jquery.countTo.js"></script>
     <script src="assist/OwlCarousel/owl.carousel.min.js"></script>
     <script src="assist/countDown/jquery.countdown.min.js"></script>
     <script src="assist/animation/aos.js"></script>
