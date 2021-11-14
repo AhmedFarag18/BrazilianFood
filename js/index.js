@@ -1,9 +1,9 @@
-$(document).ready(function() {
-    //loading page
-    $(window).on('load', function() {
-        $('.loading').fadeOut(2000)
-    });
+/*---------------loading page [Preloader] ----------*/
+$(window).on("load", function() {
+    $(".loading").fadeOut("slow");
+});
 
+$(document).ready(function() {
     /*================== Owl carousel for Slider Images ========================================================================= */
     $('.owl-carousel').owlCarousel({
         loop: true,
