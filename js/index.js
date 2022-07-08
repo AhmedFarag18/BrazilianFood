@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function() {
     //loading page
     $(window).on('load', function() {
