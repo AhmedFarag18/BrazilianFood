@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    
+    let body = document.body;
+    
     //loading page
     $(window).on('load', function() {
         $('.loading').fadeOut(2000)
@@ -14,12 +17,14 @@ $(document).ready(function() {
     });
 
     /*=====================  Open Side Menu  ====================================================================== */
-    $('.menu').on('click', function() {
-        $('.side-menu').toggleClass('open')
+
+    document.querySelector(".menu").addEventListener("clcik",()=>{
+        document.querySelector(".side-menu").classList.toggle("open");
     })
-    $('.fa-times').on('click', function() {
-        $('.side-menu').removeClass('open')
-    });
+    document.querySelector(".fa-times").addEventListener("clcik",()=>{
+        document.querySelector(".side-menu").classList.remove("open");
+    })
+
 
     /*============================== search =====================================================*/
     let search = document.querySelector(".search-menu");
@@ -62,7 +67,7 @@ $(document).ready(function() {
     /*================================= Count down ========================================================== */
     var content = $('.count-down').html();
 
-    $('.count-down').countdown('2022/03/28', function(event) {
+    $('.count-down').countdown('2023/03/28', function(event) {
         $(this).html(event.strftime(content));
     });
 
@@ -114,9 +119,9 @@ $(document).ready(function() {
     function toggleTheme() {
         if (localStorage.getItem("restaurant-theme") !== null) {
             if (localStorage.getItem("restaurant-theme") === "darkmode") {
-                $("body").addClass("darkmode");
+                body.classList.add("darkmode");
             } else {
-                $("body").removeClass("darkmode");
+                body.classList.remove("darkmode");
             }
         }
         updateIcon();
@@ -125,7 +130,6 @@ $(document).ready(function() {
 
     // when click the icon change theme
     $(".toggle-theme").on("click", function() {
-        $("body").toggleClass("darkmode");
         if ($("body").hasClass("darkmode")) {
             localStorage.setItem("restaurant-theme", "darkmode");
         } else {
@@ -149,10 +153,11 @@ $(document).ready(function() {
 
     /*=========================================
     //Aos animation scroll
-    ================================================== */
+    ================================================== 
+    */
     AOS.init();
 });
-=======
+
 /*---------------loading page [Preloader] ----------*/
 $(window).on("load", function() {
     $(".loading").fadeOut("slow");
@@ -217,7 +222,7 @@ $(document).ready(function() {
     /*================================= Count down ========================================================== */
     var content = $('.count-down').html();
 
-    $('.count-down').countdown('2022/03/28', function(event) {
+    $('.count-down').countdown('2023/03/28', function(event) {
         $(this).html(event.strftime(content));
     });
 
@@ -307,4 +312,3 @@ $(document).ready(function() {
     ================================================== */
     AOS.init();
 });
->>>>>>> 8d341d22d73bb44d9fc54418de11836565e0fb24
