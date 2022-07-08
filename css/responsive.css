@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* when width 1200px in large screen */
 
 html,
@@ -283,4 +284,291 @@ ul {
 /* input:active {
     outline: none;
     box-shadow: none;
+=======
+/* when width 1200px in large screen */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+@media(max-width:1200px) {
+    .nav-left {
+        display: none !important;
+    }
+    .nav-top {
+        display: block !important;
+    }
+    .header .icons-right {
+        display: none !important;
+    }
+    .header .slider {
+        margin-top: 108px;
+    }
+    /* gallary */
+    .gallery .head h2 {
+        font-size: 16rem;
+    }
+}
+
+@media(max-width:991px) {
+    .about {
+        margin-top: 210px;
+    }
+    .side-menu a {
+        font-size: 30px;
+    }
+    .side-menu a:before {
+        font-size: 90px;
+    }
+    .about .counter-up {
+        margin-top: 50px;
+    }
+    .gallery .head h2 {
+        font-size: 12rem;
+    }
+    .offer .title-letter {
+        font-size: 4.7em;
+    }
+    .offer .title-word {
+        padding: 40px 0 86px 110px;
+    }
+    .offer .offer-image:after {
+        display: block;
+    }
+    .contact .book-table:after {
+        display: block;
+    }
+    .contact .book-table h2 {
+        font-size: 45px;
+    }
+    .contact .join .form-control,
+    .contact .join .btn-sub {
+        width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+    .nav-top img {
+        width: 40px;
+    }
+    .about {
+        margin-top: 150px;
+    }
+    .side-menu a {
+        font-size: 25px;
+    }
+    .side-menu a:before {
+        font-size: 70px;
+    }
+    .gallery .head h2 {
+        font-size: 7rem;
+    }
+    .gallery .img-negitve {
+        margin-top: 0;
+    }
+    .offer .info p {
+        font-size: 15px;
+    }
+    .offer .info .box {
+        padding: 7px;
+    }
+    .offer .info .box .num {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .offer .info .box .name {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .team {
+        margin-top: 100px;
+    }
+    .contact .contact-form {
+        position: unset;
+    }
+    .contact .book-table {
+        padding: 40px;
+    }
+    .contact .book-table::after,
+    .contact .book-table::before {
+        display: none;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+@media(max-width:650px) {
+    .side-menu a:before {
+        font-size: 55px;
+    }
+    .about .heading {
+        font-size: 60px;
+    }
+    .about .title-word {
+        padding: 40px 0 86px 49px;
+    }
+    .about p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .about .counter-up .box .num {
+        font-size: 40px;
+    }
+    .about .counter-up .box .name {
+        font-size: 14px;
+    }
+    .gallery .head h2 {
+        font-size: 5rem;
+    }
+    .testmonials .heading {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 481px) {
+    .side-menu {
+        padding: 40px;
+    }
+    .side-menu a {
+        font-size: 22px;
+    }
+    .side-menu a:before {
+        font-size: 45px;
+    }
+    .about {
+        margin-top: 50px;
+    }
+    .gallery .head h2 {
+        font-size: 4rem;
+    }
+    .offer .title-word {
+        padding: 40px 0 86px 80px;
+    }
+    .offer .heading {
+        font-size: 40px;
+    }
+    .offer .info .box {
+        padding: 4px;
+    }
+    .offer .info .box .num {
+        font-size: 22px;
+        font-weight: 800;
+    }
+    .offer .info .box .name {
+        font-size: 12px;
+    }
+    .testmonials .heading {
+        font-size: 40px;
+    }
+    .testmonials .title-word {
+        padding: 40px 0 86px 80px;
+    }
+    .team .heading {
+        font-size: 50px;
+    }
+    .team .title-letter {
+        font-size: 4em;
+    }
+    .team .title-word {
+        padding: 40px 0 86px 80px;
+    }
+    .contact .book-table h2 {
+        font-size: 30px;
+    }
+    .nav-top .icons-right i {
+        margin: 0 5px;
+    }
+    .gallery .link-gallary {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .gallery .link-gallary::before {
+        width: 50px;
+    }
+    .contact .book-table .main-btn {
+        padding: 10px 18px;
+    }
+}
+
+
+/* screen xx-small */
+
+@media(max-width:305px) {
+    .side-menu {
+        padding: 35px;
+    }
+    .side-menu a {
+        font-size: 20px;
+    }
+    .side-menu a:before {
+        font-size: 35px;
+    }
+    .about {
+        margin-top: 30px;
+    }
+    .about .heading {
+        font-size: 40px;
+    }
+    .about .title-word {
+        padding: 40px 0 86px 40px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .about .counter-up .box .num {
+        font-size: 30px;
+    }
+    .about .counter-up .box .name {
+        font-size: 12px;
+    }
+    .gallery .head h2 {
+        font-size: 3rem;
+    }
+    .contact .book-table h2 {
+        font-size: 22px;
+    }
+    .nav-top .icons-right i {
+        margin: 0 2px;
+    }
+    .offer .title-word {
+        padding: 40px 0 60px 40px;
+    }
+    .testmonials .title-word {
+        padding: 40px 0 86px 40px;
+    }
+    .contact .book-table .main-btn {
+        padding: 10px 14px;
+    }
+}
+
+
+/* ========================================================================
+============================= Global style================================ */
+
+ul {
+    list-style: none;
+}
+
+.custom-container {
+    max-width: 100%;
+}
+
+
+/* input:active {
+    outline: none;
+    box-shadow: none;
+>>>>>>> 8d341d22d73bb44d9fc54418de11836565e0fb24
 } */
