@@ -22,3 +22,6 @@ A fully responsive landing page designed for a restaurant, showcasing its ambian
   - **Countdown:** For event countdowns.
   - **AOS:** For section animations on scroll.
   - **Owl Carousel:** For creating responsive and interactive sliders.
+
+### Live Preview
+  [Restaurant](https://brazilian-food.vercel.app/)
